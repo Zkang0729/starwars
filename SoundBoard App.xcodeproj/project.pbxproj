@@ -12,6 +12,14 @@
 		3092772521AEDE2D00DE4669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3092772321AEDE2D00DE4669 /* Main.storyboard */; };
 		3092772721AEDE2F00DE4669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3092772621AEDE2F00DE4669 /* Assets.xcassets */; };
 		3092772A21AEDE2F00DE4669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3092772821AEDE2F00DE4669 /* LaunchScreen.storyboard */; };
+		3092773721AEDF7C00DE4669 /* star-wars-cantina-song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3092773321AEDF7B00DE4669 /* star-wars-cantina-song.mp3 */; };
+		3092773821AEDF7C00DE4669 /* rebel-theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3092773421AEDF7B00DE4669 /* rebel-theme.mp3 */; };
+		3092773921AEDF7C00DE4669 /* imperial_march.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3092773521AEDF7C00DE4669 /* imperial_march.mp3 */; };
+		3092773A21AEDF7C00DE4669 /* star-wars-theme-song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3092773621AEDF7C00DE4669 /* star-wars-theme-song.mp3 */; };
+		3092773D21AEE86200DE4669 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3092773C21AEE86200DE4669 /* AVFoundation.framework */; };
+		3092774021AF011700DE4669 /* STJEDISE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3092773F21AF011700DE4669 /* STJEDISE.TTF */; };
+		3092774321AF013F00DE4669 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092774121AF013F00DE4669 /* Starjhol.ttf */; };
+		3092774421AF013F00DE4669 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092774221AF013F00DE4669 /* Starjedi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		3092772621AEDE2F00DE4669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3092772921AEDE2F00DE4669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3092772B21AEDE2F00DE4669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3092773321AEDF7B00DE4669 /* star-wars-cantina-song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "star-wars-cantina-song.mp3"; path = "SoundBoard App/Sounds/star-wars-cantina-song.mp3"; sourceTree = SOURCE_ROOT; };
+		3092773421AEDF7B00DE4669 /* rebel-theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "rebel-theme.mp3"; path = "SoundBoard App/Sounds/rebel-theme.mp3"; sourceTree = SOURCE_ROOT; };
+		3092773521AEDF7C00DE4669 /* imperial_march.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = imperial_march.mp3; path = "SoundBoard App/Sounds/imperial_march.mp3"; sourceTree = SOURCE_ROOT; };
+		3092773621AEDF7C00DE4669 /* star-wars-theme-song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "star-wars-theme-song.mp3"; path = "SoundBoard App/Sounds/star-wars-theme-song.mp3"; sourceTree = SOURCE_ROOT; };
+		3092773C21AEE86200DE4669 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3092773F21AF011700DE4669 /* STJEDISE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = STJEDISE.TTF; path = star_jedi/stjedise/STJEDISE.TTF; sourceTree = SOURCE_ROOT; };
+		3092774121AF013F00DE4669 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjhol.ttf; path = star_jedi/starjedi/Starjhol.ttf; sourceTree = SOURCE_ROOT; };
+		3092774221AF013F00DE4669 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjedi.ttf; path = star_jedi/starjedi/Starjedi.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3092773D21AEE86200DE4669 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,7 @@
 			children = (
 				3092771E21AEDE2D00DE4669 /* SoundBoard App */,
 				3092771D21AEDE2D00DE4669 /* Products */,
+				3092773B21AEE86200DE4669 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,8 @@
 		3092771E21AEDE2D00DE4669 /* SoundBoard App */ = {
 			isa = PBXGroup;
 			children = (
+				3092773E21AF00EA00DE4669 /* Font */,
+				3092773221AEDF4B00DE4669 /* Sounds */,
 				3092771F21AEDE2D00DE4669 /* AppDelegate.swift */,
 				3092772121AEDE2D00DE4669 /* ViewController.swift */,
 				3092772321AEDE2D00DE4669 /* Main.storyboard */,
@@ -62,6 +82,35 @@
 				3092772B21AEDE2F00DE4669 /* Info.plist */,
 			);
 			path = "SoundBoard App";
+			sourceTree = "<group>";
+		};
+		3092773221AEDF4B00DE4669 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3092773521AEDF7C00DE4669 /* imperial_march.mp3 */,
+				3092773421AEDF7B00DE4669 /* rebel-theme.mp3 */,
+				3092773321AEDF7B00DE4669 /* star-wars-cantina-song.mp3 */,
+				3092773621AEDF7C00DE4669 /* star-wars-theme-song.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		3092773B21AEE86200DE4669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3092773C21AEE86200DE4669 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3092773E21AF00EA00DE4669 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3092773F21AF011700DE4669 /* STJEDISE.TTF */,
+				3092774221AF013F00DE4669 /* Starjedi.ttf */,
+				3092774121AF013F00DE4669 /* Starjhol.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +172,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3092772A21AEDE2F00DE4669 /* LaunchScreen.storyboard in Resources */,
+				3092773921AEDF7C00DE4669 /* imperial_march.mp3 in Resources */,
 				3092772721AEDE2F00DE4669 /* Assets.xcassets in Resources */,
+				3092774021AF011700DE4669 /* STJEDISE.TTF in Resources */,
+				3092774321AF013F00DE4669 /* Starjhol.ttf in Resources */,
+				3092773A21AEDF7C00DE4669 /* star-wars-theme-song.mp3 in Resources */,
 				3092772521AEDE2D00DE4669 /* Main.storyboard in Resources */,
+				3092773721AEDF7C00DE4669 /* star-wars-cantina-song.mp3 in Resources */,
+				3092774421AF013F00DE4669 /* Starjedi.ttf in Resources */,
+				3092773821AEDF7C00DE4669 /* rebel-theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

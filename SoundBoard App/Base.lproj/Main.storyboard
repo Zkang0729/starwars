@@ -1,19 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Starjedi.ttf">
+            <string>StarJedi</string>
+        </array>
+        <array key="Starjhol.ttf">
+            <string>StarJediHollow</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundBoard_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XHV-46-Gkx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swlogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAY-Yr-5ra" userLabel="logo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="eXn-TW-VB9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Otg-tn-9fZ" userLabel="Songs">
+                                <rect key="frame" x="0.0" y="144" width="414" height="668"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="StB-5k-jUd">
+                                        <rect key="frame" x="65" y="0.0" width="284" height="167"/>
+                                        <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="30"/>
+                                        <state key="normal" title="Imperial March">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="1" green="0.22413653131304756" blue="0.15999385159240442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLa-9v-mvB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-BE-HeM">
+                                        <rect key="frame" x="97" y="167" width="220" height="167"/>
+                                        <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="30"/>
+                                        <state key="normal" title="Rebel Theme">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="1" green="0.22239341226708609" blue="0.10368580073776468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kS-Na-V9V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-ZZ-Hqo">
+                                        <rect key="frame" x="90" y="334" width="234" height="167"/>
+                                        <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="30"/>
+                                        <state key="normal" title="Cantina Song">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="1" green="0.21366786883591593" blue="0.092395353405399838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gyc-N1-ytd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKX-gK-Rcf">
+                                        <rect key="frame" x="115" y="501" width="184" height="167"/>
+                                        <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="30"/>
+                                        <state key="normal" title="Star Wars">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.97154306994818651" green="0.20758753723813222" blue="0.089766065296429789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfv-uX-H8w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J1T-Df-KLZ" userLabel="Operation">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-jU-DBc">
+                                        <rect key="frame" x="0.0" y="5" width="138" height="40"/>
+                                        <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="17"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEo-mn-D6i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQb-Lf-kay">
+                                        <rect key="frame" x="138" y="5" width="138" height="40"/>
+                                        <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="17"/>
+                                        <state key="normal" title="Pause">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSq-IE-5y0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vJ-rE-fH8">
+                                        <rect key="frame" x="276" y="5" width="138" height="40"/>
+                                        <fontDescription key="fontDescription" name="StarJediHollow" family="Star Jedi Hollow" pointSize="17"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cj-Ot-GNk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vff-Br-wxG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hAY-Yr-5ra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7gI-OY-49l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J1T-Df-KLZ" secondAttribute="trailing" id="CV1-zy-BM7"/>
+                            <constraint firstAttribute="trailing" secondItem="XHV-46-Gkx" secondAttribute="trailing" id="DNS-sX-suI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J1T-Df-KLZ" secondAttribute="bottom" id="N7C-WB-8aO"/>
+                            <constraint firstItem="hAY-Yr-5ra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RIW-J5-c9w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAY-Yr-5ra" secondAttribute="trailing" id="Uy0-Lp-k3p"/>
+                            <constraint firstItem="hAY-Yr-5ra" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WOV-SV-77X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Otg-tn-9fZ" secondAttribute="trailing" id="YpJ-Pt-MaP"/>
+                            <constraint firstItem="J1T-Df-KLZ" firstAttribute="top" secondItem="Otg-tn-9fZ" secondAttribute="bottom" id="d7H-Du-gRg"/>
+                            <constraint firstItem="Otg-tn-9fZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="egU-cM-nSO"/>
+                            <constraint firstItem="XHV-46-Gkx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g0O-Zt-IT0"/>
+                            <constraint firstItem="XHV-46-Gkx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gAn-y9-7PN"/>
+                            <constraint firstItem="J1T-Df-KLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m7S-rL-a3L"/>
+                            <constraint firstAttribute="bottom" secondItem="XHV-46-Gkx" secondAttribute="bottom" id="n2G-rm-15Z"/>
+                            <constraint firstItem="hAY-Yr-5ra" firstAttribute="bottom" secondItem="Otg-tn-9fZ" secondAttribute="top" id="nb9-Jl-BHF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +148,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="2560" height="1707"/>
+        <image name="swlogo" width="520.5" height="314.25"/>
+    </resources>
 </document>
